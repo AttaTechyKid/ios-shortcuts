@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>app</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+        // Detect if the web app is running in standalone mode
+var isStandalone = window.navigator.standalone || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
 
+// Handle link clicks
+document.addEventListener('click', function(event) {
+  if (isStandalone && event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('http')) {
+    event.preventDefault(); // Prevent the default link behavior
+    window.location.href = event.target.getAttribute('href'); // Manually navigate to the link URL
+  }
+});
+
+    </script>
 </head>
 <body>
     <div class="backimage">
