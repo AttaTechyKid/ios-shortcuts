@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>app</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <script>
-
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8L9YMBLL5E');
-
-
-    </script>
+    
 </head>
 <body>
     <div class="backimage">
@@ -53,5 +44,25 @@ a {
 </style>
 
 
+<script>
+    // Detect if the web app is running in standalone mode
+var isStandalone = window.navigator.standalone || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+
+// Handle link clicks
+document.addEventListener('click', function(event) {
+  if (isStandalone) {
+    var target = event.target;
+    while (target && target.tagName !== 'A') {
+      target = target.parentNode;
+    }
+    
+    if (target && target.getAttribute('href') && target.getAttribute('href').startsWith('http')) {
+      event.preventDefault();
+      window.location.href = target.getAttribute('href');
+    }
+  }
+});
+
+</script>
 </body>
 </html>
