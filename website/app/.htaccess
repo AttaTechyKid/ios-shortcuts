@@ -1,0 +1,2 @@
+Header always set X-Frame-Options "DENY"
+ErrorDocument 404 /n_a.html
