@@ -3,6 +3,15 @@
     "short_name": "ATK's Shortcut Hub",
     "start_url": "./",
     "display": "standalone",
-    "background_color": "#FFFFFF"
+    "background_color": "#FFFFFF",
+    "icons": [{ 
+
+    "src": "icon.png", 
+
+    "sizes": "512x512", 
+
+    "type": "image/png" 
+
+  }] 
   }
   
