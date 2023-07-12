@@ -1,7 +1,6 @@
-    "icons": [
-      {
-        "src": "/path/to/icon.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
+
+
+shortcut hub dis : https://discord.gg/fY6MJQesKj
+
+
+    https://is.gd/FVAd0b
