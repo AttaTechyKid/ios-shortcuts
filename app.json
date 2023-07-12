@@ -1,0 +1,8 @@
+{
+    "name": "AttaTechyKid's Shortcut Hub",
+    "short_name": "ATK's Shortcut Hub",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#FFFFFF"
+  }
+  
