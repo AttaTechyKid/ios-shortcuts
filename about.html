@@ -21,6 +21,7 @@
     <p><a href="index.html">Home</a> | <a href="about.html">About</a> | Main</p>
     <br>
     <p>This website includes all my shortcuts I made!</p>
+<div class="fact-hs">Fun fact (for iOS/iPadOS users): If you go to <b>Share Sheet</b> and tap <b>Add to Home Screen</b>, this website will act like an app!</div>
 
 
 
@@ -35,5 +36,24 @@
                 color:blue;
             }
     </style>
+
+
+    <script>
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+  // The web app is running in standalone mode (added to home screen)
+// Select all elements with a specific class
+const elementsToDelete = document.querySelectorAll('.fact-hs');
+
+// Loop through the selected elements and remove them
+elementsToDelete.forEach(element => {
+  element.remove();
+});
+
+} else {
+  // The web app is not running in standalone mode
+  console.log('Add to Home Screen to make an app!');
+}
+
+    </script>
 </body>
 </html>
