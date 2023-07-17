@@ -30,8 +30,8 @@
 
 
     <script>
-        function showArgumentPage(argument) {
-  var container = document.getElementById('shortcut-id');
+function showArgumentPage(argument) {
+  var shortcutId = document.getElementById('shortcut-id');
   var pageHTML;
 
   if (argument === '1') {
@@ -48,8 +48,9 @@
     pageHTML = "<h1>Default Page</h1>";
   }
 
-  container.innerHTML = pageHTML;
+  shortcutId.innerHTML = pageHTML;
 }
+
 
     </script>
 
