@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AttaTechyKid's Shortcut Hub</title>
+
+        <!-- Inter Reg 400 Font Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<!-- End -->
+
+<meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="ATK's Shortcuts"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="white"> 
+<link rel="manifest" href="app.json">
+<meta name="theme-color" content="#212124">
+
+
+</head>
+
+<body style="background-color: #212124;">
+
+
+    <h2>AttaTechyKid's Shortcut Hub</h2>
+    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="http://attatechykid.github.io" target="_blank">My website!</a></p>
+    <div id="shortcut-id"></div>
+
+
+
+    <script>
+        function showArgumentPage(argument) {
+  var container = document.getElementById('shortcut-id');
+  var pageHTML;
+
+  if (argument === '1') {
+    // Paste the HTML code for argument1 page
+    pageHTML = "<h1>Argument 1 Page</h1>";
+  } else if (argument === '2') {
+    // Paste the HTML code for argument2 page
+    pageHTML = "<h1>Argument 2 Page</h1>";
+  } else if (argument === '3') {
+    // Paste the HTML code for argument3 page
+    pageHTML = "<h1>Argument 3 Page</h1>";
+  } else {
+    // Default page HTML
+    pageHTML = "<h1>Default Page</h1>";
+  }
+
+  container.innerHTML = pageHTML;
+}
+
+    </script>
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Roboto', sans-serif;
+
+            }
+
+            a {
+                color:blue;
+                text-decoration: none;
+                outline: none;
+            }
+            p {
+                color:white;
+            }
+
+            h1 {
+                color:white
+            }
+            h2 {
+                color:white
+            }
+            h3 {
+                color:white
+            }
+            h4 {
+                color:white
+            }
+            h5 {
+                color:white
+            }
+            h6 {
+                color:white
+            }
+
+            
+    </style>
+</body>
+</html>
